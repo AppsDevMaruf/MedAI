@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    tools:context=".ui.Personal_Info">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/black"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/please_comp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="12dp"
+        android:gravity="top"
+        android:text="@string/please_comp"
+        android:textAppearance="@style/please_comp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/name_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="188dp"
+        android:padding="3dp"
+        android:text="@string/name_"
+        android:textAlignment="center"
+        android:textAppearance="@style/name_"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/lastNameET"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/please_comp" />
+
+    <TextView
+        android:id="@+id/gender_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="58dp"
+        android:gravity="top"
+        android:padding="3dp"
+        android:text="@string/gender_"
+        android:textAppearance="@style/gender_"
+        app:layout_constraintEnd_toStartOf="@+id/frameLayout12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_" />
+
+    <FrameLayout
+
+        android:id="@+id/frameLayout12"
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/edit_text_from_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gender_"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameET">
+
+        <Spinner
+            android:id="@+id/genderSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:contentDescription="@string/gender_"
+            android:spinnerMode="dropdown"
+            android:tooltipText="Select"
+            tools:ignore="TouchTargetSizeCheck" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout13"
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/edit_text_from_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout19">
+
+        <Spinner
+            android:id="@+id/relationSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:contentDescription="@string/relation"
+            android:spinnerMode="dropdown"
+            android:tooltipText="Select"
+            tools:ignore="TouchTargetSizeCheck" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout14"
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/edit_text_from_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout20">
+
+        <Spinner
+            android:id="@+id/educationSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:contentDescription="@string/ethnicity_"
+            android:spinnerMode="dropdown"
+            android:tooltipText="Select"
+            tools:ignore="TouchTargetSizeCheck" />
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/firstNameET"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/edit_text_from_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lastNameET"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout11"
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/edit_text_from_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout15">
+
+        <Spinner
+            android:id="@+id/mobNumSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:contentDescription="@string/mobile_numb"
+            android:spinnerMode="dropdown"
+            android:tooltipText="Select"
+            tools:ignore="TouchTargetSizeCheck" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout15"
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/edit_text_from_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout16">
+
+        <Spinner
+            android:id="@+id/regionSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:spinnerMode="dropdown"
+            android:tooltipText="Select"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout16"
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/edit_text_from_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout14">
+
+        <Spinner
+            android:id="@+id/countrySpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:contentDescription="@string/country_"
+            android:spinnerMode="dropdown"
+            android:tooltipText="Select"
+            tools:ignore="TouchTargetSizeCheck" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout17"
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/edit_text_from_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout12">
+
+        <Spinner
+            android:id="@+id/ageSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:spinnerMode="dropdown"
+            android:tooltipText="Select"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout18"
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/edit_text_from_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout13">
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:contentDescription="@string/education"
+            android:spinnerMode="dropdown"
+            android:tooltipText="Select"
+            tools:ignore="TouchTargetSizeCheck" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout19"
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/edit_text_from_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout17">
+
+        <Spinner
+            android:id="@+id/maritalSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:spinnerMode="dropdown"
+            android:tooltipText="Select"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/lastNameET"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/edit_text_from_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/name_"
+        app:layout_constraintTop_toBottomOf="@+id/please_comp"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout20"
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/edit_text_from_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout18">
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:contentDescription="@string/occupation_"
+            android:spinnerMode="dropdown"
+            android:tooltipText="Select"
+            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+    </FrameLayout>
+
+    <TextView
+
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="76dp"
+        android:gravity="top"
+        android:padding="3dp"
+        android:text="@string/age"
+        android:textAppearance="@style/gender_"
+        app:layout_constraintEnd_toStartOf="@+id/frameLayout17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gender_" />
+
+    <TextView
+
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="26dp"
+        android:gravity="top"
+        android:padding="3dp"
+        android:text="@string/marital_status"
+        android:textAppearance="@style/gender_"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/frameLayout19"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="58dp"
+        android:gravity="top"
+        android:padding="3dp"
+        android:text="@string/relation"
+        android:textAppearance="@style/gender_"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/frameLayout13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="49dp"
+        android:gravity="top"
+        android:padding="3dp"
+        android:text="@string/education"
+        android:textAppearance="@style/gender_"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/frameLayout18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="19dp"
+        android:gravity="top"
+        android:padding="3dp"
+        android:text="@string/occupation_"
+        android:textAppearance="@style/gender_"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintEnd_toStartOf="@+id/frameLayout20"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="18dp"
+        android:gravity="top"
+        android:padding="3dp"
+        android:text="@string/ethnicity_"
+        android:textAppearance="@style/gender_"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView16"
+        app:layout_constraintEnd_toStartOf="@+id/frameLayout14"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="17dp"
+        android:gravity="top"
+        android:padding="3dp"
+        android:text="@string/country_"
+        android:textAppearance="@style/gender_"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView17"
+        app:layout_constraintEnd_toStartOf="@+id/frameLayout16"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="14dp"
+        android:gravity="top"
+        android:padding="3dp"
+        android:text="@string/region_"
+        android:textAppearance="@style/gender_"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView18"
+        app:layout_constraintEnd_toStartOf="@+id/frameLayout15"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="14dp"
+        android:gravity="top"
+        android:padding="3dp"
+        android:text="@string/mobile_numb"
+        android:textAppearance="@style/gender_"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/frameLayout11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout11" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/saveutton"
+        android:layout_width="244dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/button_selector"
+        android:elevation="10dp"
+        android:text="Save"
+        android:textAppearance="@style/sign_in"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.61"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout11" />
+</androidx.constraintlayout.widget.ConstraintLayout>

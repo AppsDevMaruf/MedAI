@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">MedAi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_bac">Welcome Back!</string>
+    <string name="please_sign">Please Sign in with your id and password</string>
+    <string name="user_id">User ID</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_pass">Forgot password?</string>
+    <string name="example_xyz"><font size="12">example@xyz.com</font></string>
+    <string name="sign_in">Sign in</string>
+    <string name="please_comp">Please Complete \nyour profile</string>
+    <string name="name_">Name* :</string>
+    <string name="gender_"><b>Gender* :</b></string>
+    <string name="age"><b>Age* :</b></string>
+    <string name="marital_status">Marital Status :</string>
+    <string name="relation">Relation :</string>
+    <string name="education">Education :</string>
+
+    <string name="occupation_">Occupation :</string>
+    <string name="country_">Country :</string>
+    <string name="region_">Region :</string>
+    <string name="ethnicity_">Ethnicity :</string>
+    <string name="mobile_numb">Mobile Number* :</string>
+</resources>
